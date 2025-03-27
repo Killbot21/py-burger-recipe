@@ -44,12 +44,12 @@ class OneOf(Validator):
 
 
 class BurgerRecipe:
-    buns: Number = Number(2, 3)
-    cheese: Number = Number(0, 2)
-    tomatoes: Number = Number(0, 3)
-    cutlets: Number = Number(1, 3)
-    eggs: Number = Number(0, 2)
-    sauce: OneOf = OneOf(("ketchup", "mayo", "burger"))
+    buns = Number(2, 3)
+    cheese = Number(0, 2)
+    tomatoes = Number(0, 3)
+    cutlets = Number(1, 3)
+    eggs = Number(0, 2)
+    sauce = OneOf(("ketchup", "mayo", "burger"))
 
     def __init__(
         self,
@@ -60,9 +60,9 @@ class BurgerRecipe:
         eggs: int,
         sauce: str
     ) -> None:
-        self.buns: int = buns
-        self.cheese: int = cheese
-        self.tomatoes: int = tomatoes
-        self.cutlets: int = cutlets
-        self.eggs: int = eggs
-        self.sauce: str = sauce
+        self.buns = buns
+        self.cheese = cheese
+        self.tomatoes = tomatoes
+        self.cutlets = cutlets
+        self.eggs = eggs
+        self.sauce = sauce
